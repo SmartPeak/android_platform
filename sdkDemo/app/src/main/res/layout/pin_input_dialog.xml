@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="bottom|center_horizontal"
+       
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pininput"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/marginBottom_small"
+            android:paddingTop="@dimen/marginTop_middle" >
+
+            <!-- 关闭按钮 -->
+
+            <RelativeLayout
+                android:id="@+id/ll_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_close"
+                    android:layout_width="@dimen/headheight"
+                    android:layout_height="@dimen/headheight" >
+
+                    <ImageView
+                        android:id="@+id/iv_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/marginLeft_small"
+                        android:background="@drawable/ico_delete_gray" >
+                    </ImageView>
+                </RelativeLayout>
+
+                <!-- 标题 -->
+
+                <TextView
+                    android:id="@+id/tx_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/msg2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_medium"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_small"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/marginTop_small" >
+
+                <TextView
+                    android:id="@+id/tx_cardno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/marginLeft_middle"
+                    android:textColor="@color/text_color_enable"
+                    android:textSize="@dimen/font_size_small" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--<View style="@style/ItemDividingLineRed" />-->
+
+        <!-- 金额 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_gray_backgroud_color"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_middle"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tx_amt_pre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/marginTop_middle"
+                    android:text="￥"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/font_size_xxlarge"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tx_amt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/marginTop_small"
+                    android:text="0.00"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/font_size_xxlarge"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <!-- 密码输入框 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/marginBottom_large"
+                android:layout_marginTop="@dimen/marginTop_middle" >
+
+                <EditText
+                    android:id="@+id/et_pin"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/marginTop_small"
+                    android:layout_weight="1"
+                    android:background="@drawable/pininput"
+                    android:enabled="false"
+                    android:text=""
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/font_size_xlarge" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/ItemDividingLine" />
+
+    <LinearLayout
+        android:id="@+id/ll_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/fl_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" >
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

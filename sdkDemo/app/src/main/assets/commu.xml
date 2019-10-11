@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<commu>
+    <type>socket</type>
+    <ip>196.038.095.008</ip>
+    <port>443</port>
+    <timeout>10</timeout>
+    <!-- 是否启用SSL 0否  1是  -->
+    <ifSSL>1</ifSSL>
+    <!-- 证书名称，需要放在资源文件raw文件夹下面,如果设置为null，将信任所有证书 -->
+    <cer>stunnel_s.bks</cer>
+</commu>
+  

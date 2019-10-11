@@ -1,0 +1,87 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!-- 超小号 -->
+    <dimen name="text_size_micro">8sp</dimen>
+    <!-- 大一点的超小号 -->
+    <dimen name="text_size_lmicro">10sp</dimen>
+    <!-- 小号 -->
+    <dimen name="font_size_small">14sp</dimen>
+    <!-- 标准 -->
+    <dimen name="font_size_medium">18sp</dimen>
+    <!-- 大号 -->
+    <dimen name="font_size_large">22sp</dimen>
+    <!-- 大一号 -->
+    <dimen name="font_size_xlarge">26sp</dimen>
+    <!-- 大二号 -->
+    <dimen name="font_size_xxlarge">30sp</dimen>
+    <!-- 标题栏文字 -->
+    <dimen name="font_title">20sp</dimen>
+
+    <!-- 大三号 -->
+    <dimen name="font_size_xxxlarge">50sp</dimen>
+    <!-- 金额输入框字体大小 -->
+    <dimen name="font_size_cash">40sp</dimen>
+
+    <dimen name="padding_top">7dp</dimen>
+    <dimen name="padding_bottom">7dp</dimen>
+    <dimen name="button_height">50sp</dimen>
+    <dimen name="editText_w">150sp</dimen>
+    <dimen name="margin">10sp</dimen>
+    <dimen name="marginTop_small">5sp</dimen>
+    <dimen name="marginLeft_small">5sp</dimen>
+    <dimen name="marginRight_small">5sp</dimen>
+    <dimen name="marginBottom_small">5sp</dimen>
+    <dimen name="marginTop_middle">15sp</dimen>
+    <dimen name="marginLeft_middle">15sp</dimen>
+    <dimen name="marginRight_middle">15sp</dimen>
+    <dimen name="marginBottom_middle">15sp</dimen>
+    <dimen name="marginTop_large">35sp</dimen>
+    <dimen name="marginLeft_large">35sp</dimen>
+    <dimen name="marginRight_large">35sp</dimen>
+    <dimen name="marginBottom_large">35sp</dimen>
+    <dimen name="marginLeft_xlarge">80sp</dimen>
+    <dimen name="marginRight_xlarge">80sp</dimen>
+    <dimen name="marginTop_xlarge">80sp</dimen>
+    <dimen name="marginBottom_xlarge">80sp</dimen>
+    <dimen name="marginBottom_button">50sp</dimen>
+
+    <!-- List列表高度 -->
+    <dimen name="list_item_height">50sp</dimen>
+    <!-- 弹出框列表高度 -->
+    <dimen name="popup_item_height">50sp</dimen>
+
+    <!-- 键盘键高 -->
+    <dimen name="keyboardheight">234sp</dimen>
+    <!-- 键盘键字母大小 -->
+    <dimen name="keyboardnumberheight">20sp</dimen>
+
+    <!-- 金额显示高度 -->
+    <dimen name="amtviewheight">150sp</dimen>
+
+    <!-- 页眉显示高度 -->
+    <dimen name="headheight">50sp</dimen>
+
+    <!-- 搜索Line左右空余 -->
+    <dimen name="leftspace">5sp</dimen>
+    <!-- 搜索Line搜索图标左侧空余 -->
+    <dimen name="leftimgspace">10sp</dimen>
+    <!-- 搜索Line搜索框输入左侧空余 -->
+    <dimen name="lefteditspace">20sp</dimen>
+
+    <!-- 标签textview宽度 -->
+    <dimen name="textviewwidth">80sp</dimen>
+    <!-- 冒号textview宽度 -->
+    <dimen name="nodewidth">30sp</dimen>
+
+    <!-- 二维码边距 -->
+    <dimen name="dimensionwidth">100sp</dimen>
+    <!-- 二维码容器边长 -->
+    <dimen name="dimensionparentwidth">300sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+</resources>

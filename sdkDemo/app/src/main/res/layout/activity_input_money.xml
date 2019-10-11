@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".trade.activity.InputMoneyActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_amt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/amount"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="0.00"
+            android:textColor="@color/red"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/confirm"
+        android:layout_below="@+id/ll_amt"
+        android:layout_marginTop="@dimen/marginBottom_small"
+        android:layout_marginBottom="@dimen/marginBottom_small"/>
+
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="16sp"
+        android:text="@string/confirm"/>
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pos.sdkdemo">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.pos.permission.ACCESSORY_DATETIME" />
+    <uses-permission android:name="com.pos.permission.ACCESSORY_LED" />
+    <uses-permission android:name="com.pos.permission.ACCESSORY_BEEP" />
+    <uses-permission android:name="com.pos.permission.ACCESSORY_RFREGISTER" />
+    <uses-permission android:name="com.pos.permission.CARD_READER_ICC" />
+    <uses-permission android:name="com.pos.permission.CARD_READER_PICC" />
+    <uses-permission android:name="com.pos.permission.CARD_READER_MAG" />
+    <uses-permission android:name="com.pos.permission.COMMUNICATION" />
+    <uses-permission android:name="com.pos.permission.PRINTER" />
+    <uses-permission android:name="com.pos.permission.SECURITY" />
+    <uses-permission android:name="com.pos.permission.ACCESSORY_RFREGISTER" />
+    <uses-permission android:name="com.pos.permission.EMVCORE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".base.DemoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <uses-library
+            android:name="com.odm"
+            android:required="false" />
+        <uses-library
+            android:name="com.pos.sdk"
+            android:required="false" />
+
+        <activity android:name=".ActivityWelcome">
+        </activity>
+        <activity android:name=".sign.EleSignatureActivity" />
+        <activity android:name=".led.LedTestActivity" />
+        <activity android:name=".serialport.TtyTestActivity" />
+        <activity android:name=".gps.GPSTestActivity" />
+        <activity android:name=".installapphide.InstallAppHideActivity" />
+        <activity android:name=".disablekeycode.DisableKeycodeActivity" />
+        <activity android:name=".print.PrintTestActivity" />
+        <activity android:name=".cards.IccCard.IccCard" />
+        <activity android:name=".cards.IDcard.IdCard" />
+        <activity android:name=".cards.M1card.M1Card" />
+        <activity android:name=".cards.MagCard.MagCard" />
+        <activity android:name=".cards.MemoryCard.MemoryCard" />
+        <activity android:name=".cards.PiccCard.PiccCard" />
+        <activity android:name=".cards.PsamCard.PsamCard" />
+        <activity android:name=".cards.ViccCard.ViccCard" />
+        <activity android:name=".pboc.Pboc" />
+        <activity android:name="com.basewin.zxing.MipcaActivityCapture" />
+        <activity android:name="com.basewin.zbar.ZbarScanActivity" />
+        <activity android:name=".scan.ScanTestDemoActivity"/>
+        <activity android:name=".database.DatabaseTestActivity" />
+        <activity android:name=".commu.SSLSocketDemo" />
+        <activity android:name=".deviceinfo.GetDevInfoActivity" />
+        <activity android:name=".pinpad.PinpadTestActivity" />
+        <activity android:name=".pinpad.PinpadTestActivityForVersion1" />
+        <activity android:name=".pinpad.PinpadTestActivityForVersion2" />
+        <activity android:name=".pinpad.PinpadTestActivityForDukpt" />
+        <activity android:name=".iso8583.Iso8583TestActivity" />
+        <activity android:name=".beep.BeepTestActivity" />
+        <activity android:name=".guides.buildprojects.asprojects" />
+        <activity android:name=".guides.buildprojects.eclipseprojects" />
+        <activity android:name=".TransModuleEntranceActivity" />
+        <activity android:name=".SpecialCardsModuleEntranceActivity" />
+        <activity android:name=".SystemModuleEntranceActivity" />
+        <activity android:name=".MenuActivity" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+        <activity android:name=".modifytime.ModifyTimeActivity" />
+        <activity android:name=".apn.ApnActivity" />
+        <activity android:name=".guides.GuiderActivity" />
+        <activity
+            android:name=".pboc.onlineTransFlowActivity"
+            android:label="@string/title_activity_online_trans_flow" />
+        <activity android:name=".pboc.offlineBalanceFlowActivity" />
+        <activity android:name=".pboc.offlineDetailsFlowActivity" />
+        <activity android:name=".pboc.offlineTransFlowActivity" />
+        <activity android:name=".test.TestUnionActivity" />
+        <activity android:name=".webview.webviewActivity" />
+        <activity android:name=".trade.activity.InputMoneyActivity" />
+        <activity android:name=".trade.activity.FindCardActivity" />
+        <activity android:name=".trade.activity.PinPadActivity" />
+        <activity android:name=".trade.activity.OnlineActivity" />
+        <activity android:name=".trade.activity.PrintWaitActivity" />
+        <activity android:name=".trade.activity.SinatureActivity" />
+        <activity android:name=".trade.activity.MenuActivity" />
+        <activity android:name=".trade.activity.ManageActivity" />
+        <activity android:name=".trade.activity.SignInActivity" />
+        <activity
+            android:name=".trade.activity.BaseInputActivity"
+            android:label="@string/title_activity_base_input" />
+        <activity android:name=".trade.activity.InputTraceActivity" />
+        <activity android:name=".trade.activity.CheckTradeInfoActivity" />
+        <activity android:name=".trade.activity.MenuAuthActivity" />
+        <activity android:name=".trade.activity.InputDateActivity" />
+        <activity android:name=".trade.activity.InputAuthCodeActivity" />
+        <activity android:name=".trade.activity.SettleActivity" />
+        <activity android:name=".trade.activity.NetSettingActivity" />
+        <activity android:name=".trade.activity.MerchantConfigActivity"></activity>
+    </application>
+
+</manifest>

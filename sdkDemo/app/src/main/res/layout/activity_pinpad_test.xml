@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_pinpad_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="version3.0"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/red"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="↓↓↓load keys↓↓↓"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/red"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="format"
+                android:text="format pinpad,clear all keys!" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="area:" />
+
+                <Spinner
+                    android:id="@+id/sp_pinpad_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/pinpad_areas" >
+                </Spinner>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="one area include one protect key and 1000 tmk and 1000 work key"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="loadProtectKey"
+                    android:text="load protect key"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/et_protect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="11111111111111111111111111111111"
+                    android:singleLine="true"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="tmk index:" />
+
+                <EditText
+                    android:id="@+id/et_tmkindex"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:hint="1"
+                    android:inputType="number" >
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="default 1,max index 1000"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="loadMainKey"
+                    android:text="load main key"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/et_main"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="F40379AB9E0EC533F40379AB9E0EC533"
+                    android:singleLine="true"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/et_main_kcv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="82E13665"
+                    android:singleLine="true"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="loadMacKey"
+                    android:text="load mac key"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/et_mac"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="58D46F8C4CA35891C76595E92D499E0F"
+                    android:singleLine="true"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/et_mac_kcv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="B865B501"
+                    android:singleLine="true"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="loadPinKey"
+                    android:text="load pin key"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/et_pin"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="58D46F8C4CA35891C76595E92D499E0F"
+                    android:singleLine="true"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/et_pin_kcv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="B865B501"
+                    android:singleLine="true"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="loadTDKey"
+                    android:text="load td key"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/et_td"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="58D46F8C4CA35891C76595E92D499E0F"
+                    android:singleLine="true"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/et_td_kcv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="B865B501"
+                    android:singleLine="true"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="↓↓↓use keys↓↓↓"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="calMAC"
+                    android:text="calMAC"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="encryptedTrack"
+                    android:text="encryptedTrack"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="inputonlinepin"
+                    android:text="inputonlinepin"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/type"
+                    android:textSize="10sp" >
+                </Spinner>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="encryptedData"
+                    android:text="encrypted"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="decryptData"
+                    android:text="decrypt"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="↓↓↓old version↓↓↓"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:text="version 2.0 interfaces"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/bt_intoversion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="enterPinpadTestVersion2"
+                android:text="click into version 2.0 interface demo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="version 1.0 interfaces"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/bt_intoversion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="enterPinpadTestVersion1"
+                android:text="click into version 1.0 interface demo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="dukpt interfaces"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/bt_intodukpt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="enterPinpadTestDukpt"
+                android:text="click into dukpt interface demo" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

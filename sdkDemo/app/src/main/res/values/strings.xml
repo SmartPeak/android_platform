@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">SDKDemo</string>
+    <string name="ok">OK</string>
+    <string name="msg1">Please use the bank card swiping card</string>
+    <string name="msg2">Please enter the bank card password</string>
+    <string name="msg3">Please enter the supervisor password</string>
+    <string name="msg4">Please make sure the return of the amount</string>
+    <string name="cardno">Card number:</string>
+    <string name="show_pinpad_view">Display PINPAD the view</string>
+    <string name="load_protect_key">"Load protect key "</string>
+    <string name="load_main_key">Load 6F70543AFFDC24E0E51709EA4064F9E5 successfully</string>
+    <string name="success">Success</string>
+    <string name="defeated">Fail</string>
+    <string name="load_mac_key">Load MAC key </string>
+    <string name="calculation_mac_values">MAC1 value is computed:</string>
+    <string name="calculation_mac_data_length">Calculate the length of the String data MAC:</string>
+    <string name="calculation_mac_btye_length">Calculate the length byte data as the MAC:</string>
+    <string name="calculation_mac_byte_values">Calculate the byte data for MAC:</string>
+    <string name="call_beeper">Call the buzzer</string>
+    <string name="get_device_information">Call device information module</string>
+    <string name="call_led">Call the LED module</string>
+    <string name="call_pboc">Call the PBOC module</string>
+    <string name="call_pinpad_function">Call the pinpad module</string>
+    <string name="download_aid_data">"Download the AID of data "</string>
+    <string name="value">" Value of = "</string>
+    <string name="download_rid_data">"Download rids data "</string>
+    <string name="encrypt_over">To encrypt the data：</string>
+    <string name="cal_printer_function">Call the print module</string>
+    <string name="call_scan_function">Calling code modules</string>
+    <string name="card_number">"Card number: "</string>
+    <string name="two_track_data">"Track 2: "</string>
+    <string name="three_track_data">"Track 3: "</string>
+    <string name="period_of_validity">"Validity: "</string>
+    <string name="magnetic_card">"  Mag card"</string>
+    <string name="quick_pass">"  RF card"</string>
+    <string name="ic_card">"  IC card"</string>
+    <string name="s">seconds</string>
+    <string name="ms">ms</string>
+    <string name="pboc_time_consuming">PBOC IC the process pass</string>
+    <string name="quick_pass_call_password_keyboard">Non contact call password keyboard</string>
+    <string name="ic_card_transaction_success">IC card transaction success</string>
+    <string name="ic_refuse_trade">IC card transaction refused, if online success, need is Reverse</string>
+    <string name="pboc_error">"PBOC process error --- "</string>
+    <string name="print_start">Print start</string>
+    <string name="print_end">Print end</string>
+    <string name="print_error">"Printing error "</string>
+    <string name="scan_success">"Sweep code success barcode = "</string>
+    <string name="scan_end">Sweep code ends</string>
+    <string name="keyboard_input_length">Password keyboard input, the password length for now=</string>
+    <string name="keyboard_error">Password keyboard input error</string>
+    <string name="password_input_completed">Password to complete</string>
+    <string name="no_transactions_encrypted">No secret the trade</string>
+    <string name="user_cancelled">User cancelled</string>
+    <string name="input_pw">Touch screen switch, please enter the password, and press the ok button!</string>
+    <string name="key_value_returned">Key value is returned</string>
+    <string name="please_enter_the_bank_card_password">Please enter the bank card password</string>
+    <string name="pinpad_creat_success">PINPAD view to create success</string>
+    <string name="pinpad_view_close">Close the PINPAD view</string>
+    <string name="show_password">Show the password</string>
+    <string name="set_pinpad_layout">Set the PINPAD layout</string>
+    <string name="communication_error">Communication error, communication termination</string>
+    <string name="show_content">Results showed</string>
+    <string name="show_data">Echo show the button and button the coordinates</string>
+    <string name="Get_keyboard_coordinates">Successfully get key coordinates</string>
+    <string name="clean">Clear</string>
+    <string name="send_command">Send Command</string>
+    <string name="sign_screen">please signed on screen</string>
+    <string name="please_wait">signature is to save,please wait!</string>
+    <string name="eletronical_signature">Electronic signature module</string>
+    <string name="ele_signature">Electronic Signature</string>
+    <string name="scan_test">Scan</string>
+    <string name="pinpad_test">Pinpad</string>
+    <string name="iso8583_test">Iso8583</string>
+    <string name="led_test">Led</string>
+    <string name="tty_test">Tty</string>
+    <string name="beep_test">Beep</string>
+    <string name="gps_test">GPS</string>
+    <string name="install_app_hide">Install App Hide</string>
+    <string name="disable_keycode">Disable Keycode</string>
+    <string name="print_test">Printer</string>
+    <string name="card_memory">memory Card</string>
+    <string name="card_vicc">vicc Card</string>
+    <string name="card_psam">psam Card</string>
+    <string name="id_card">Id Card</string>
+    <string name="m1_card">M1 Card</string>
+    <string name="mag_card">Mag Card</string>
+    <string name="icc_card">IC Card</string>
+    <string name="picc_card">Picc Card</string>
+    <string name="m1desfire_card">M1 Desfire Card</string>
+    <string name="card_reader">Mix Reader</string>
+    <string name="pboc">EMV trans</string>
+    <string name="get_device_info">Get device info</string>
+    <string name="commu_text">Communication</string>
+    <string name="database_text">Database</string>
+    <string name="sale_trade">sale trade</string>
+    <string name="guider">build project</string>
+    <string name="cardreader_all">Read All</string>
+    <string name="cardreader_only_ic">Only IC</string>
+    <string name="cardreader_only_mag">Only MAG</string>
+    <string name="cardreader_only_rf">Only RF</string>
+    <string name="cardreader_timeout">Timeouts:</string>
+    <string name="cardreader_timeout_unit">second</string>
+    <string name="cardreader_field_strength">Field strength:</string>
+    <string name="cardreader_field_strength_tips">please enter 0~255 range value</string>
+    <string name="track_no_1">Track 1:</string>
+    <string name="track_no_2">Track 2:</string>
+    <string name="track_no_3">Track 3:</string>
+    <string name="card_public_start">Start</string>
+    <string name="card_public_over">Over</string>
+    <string name="card_public_command">Command:</string>
+    <string name="card_public_command_content">01000300</string>
+    <string name="card_public_enter">Enter</string>
+    <string name="detect_card_memory">detect memory card</string>
+    <string name="detect_card_M1">detect M1 card</string>
+    <string name="detect_card_Vicc">detect vicc card</string>
+    <string name="detect_card_idcard">detect id card</string>
+    <string name="detect_card_psam">detect psam card</string>
+    <string name="detect_card_mag">detect mag card</string>
+    <string name="detect_card_icc">detect IC card</string>
+    <string name="detect_card_picc">detect PICC card</string>
+    <string name="card_4442_pwd_left">passwd verify left</string>
+    <string name="card_m1_card_unknown_explore">Identify the M1 card</string>
+    <string name="pboc_normal">OnlineTrans</string>
+    <string name="pboc_quick_pass">OfflineTrans</string>
+    <string name="pboc_amount">Amount:</string>
+    <string name="pboc_amount_tips">Effective format for Numbers and the decimal point</string>
+    <string name="title_activity_online_trans_flow">onlineTransFlowActivity</string>
+    <string name="scan_title">put Qr code/One dimension code into scan area</string>
+    <string name="idcard_attention">Id card module is only available for CARDS and APDU interactive interface, no id card information decoding module, all to get the data for the cipher text!</string>
+    <string name="transModule">modules for card trans</string>
+    <string name="specialCardsModule">modules for special cards</string>
+    <string name="systemModule">modules for system interface</string>
+    <string name="buildProject">how to build project by sdk</string>
+    <string name="modifytime">modify system time</string>
+    <string name="apn">apn modules</string>
+    <string name="apnadd">apn add</string>
+    <string name="apndelete">apn delete</string>
+    <string name="apnquerylist">query apn list</string>
+    <string name="apnset">apn set</string>
+    <string name="apnquery">apn query</string>
+    <string name="test">union test</string>
+    <string name="webview">webview test</string>
+    <string name="menu_sale">SALE</string>
+    <string name="menu_void">VOID</string>
+    <string name="menu_auth">AUTH</string>
+    <string name="menu_auth_cancel">AUTH CANCEL</string>
+    <string name="menu_auth_complete">AUTH COMPLETE</string>
+    <string name="menu_auth_complete_void">AUTH COMPLETE VOID</string>
+    <string name="menu_manage">MANAGER</string>
+    <string name="menu_sign_in">SING IN</string>
+    <string name="menu_settle">SETTLE</string>
+    <string name="menu_reference">REFERENCE</string>
+    <string name="menu_net_setting">NET SETTING</string>
+    <string name="menu_merchant_config">MERCHANT CONFIG</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="amount">Amount:</string>
+    <string name="confirm">confirm</string>
+    <string name="input_money">please input money</string>
+    <string name="find_card_attention">please insert card</string>
+    <string name="cancel">cancel</string>
+    <string name="amount_format_error">Amount Format Error</string>
+    <string name="trade_failure">Trade payment failure</string>
+    <string name="sinature">Please sign your name</string>
+    <string name="menu">Menu</string>
+    <string name="loading_key">loading key···</string>
+    <string name="printing">printing···</string>
+    <string name="net_work">online···</string>
+    <string name="find_card_again">Please find card again</string>
+    <string name="title_activity_base_input">BaseInputActivity</string>
+    <string name="trace_hint">please input original trace (6 digits)</string>
+    <string name="trade_name">Trade Type:</string>
+    <string name="card_num">Card Num:</string>
+    <string name="reference_no">Reference No:</string>
+    <string name="no_trace">Check no such transaction!</string>
+    <string name="date_hint">Please enter the original transaction date (MMDD)</string>
+    <string name="auth_code_hint">Please enter the original authorization code (6 digits)</string>
+    <string name="month_date_format_error">Month/Date format error</string>
+    <string name="Please_enter_authorization">Please enter the original authorization code (6 digits)</string>
+    <string name="whether_settlement">Do you want settlement？</string>
+    <string name="print_detail_trade">Print the transaction details?</string>
+    <string name="print_failure">Printing failed transactions details？</string>
+</resources>

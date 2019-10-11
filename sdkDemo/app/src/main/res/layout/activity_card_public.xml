@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <EditText
+            android:hint="@string/card_public_command_content"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:inputType="textPersonName"
+            android:textSize="10sp"
+            android:ems="10"
+            android:layout_alignTop="@+id/textView2" android:layout_toEndOf="@+id/textView2"
+            android:id="@+id/cmd"
+            android:gravity="center"/>
+    <TextView
+            android:text="@string/card_public_command"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="44dp"
+            android:id="@+id/textView2" android:layout_below="@+id/start" android:layout_alignParentStart="true"
+            android:layout_marginStart="22dp"
+            android:gravity="center"/>
+    <Button
+            android:text="@string/card_public_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" android:layout_alignTop="@+id/cmd"
+            android:layout_toEndOf="@+id/cmd" android:id="@+id/enter"
+            android:textSize="10sp"
+            android:gravity="center"/>
+    <Button
+            android:text="@string/card_public_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="57dp"
+            android:id="@+id/start" android:layout_alignParentTop="true" android:layout_toEndOf="@+id/textView2"/>
+    <Button
+            android:text="@string/card_public_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignTop="@+id/start"
+            android:layout_toStartOf="@+id/enter" android:id="@+id/over"/>
+    <TextView
+            android:text="@string/cardreader_timeout"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/timeout"
+            android:layout_marginTop="26dp" android:layout_below="@+id/cmd" android:layout_toStartOf="@+id/cmd"/>
+    <EditText
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:inputType="textPersonName"
+            android:textSize="10sp"
+            android:hint="@string/cardreader_timeout_unit"
+            android:gravity="center"
+            android:ems="10"
+            android:id="@+id/second"
+            android:layout_alignTop="@+id/timeout" android:layout_centerHorizontal="true"/>
+    <Button
+            android:text="@string/card_m1_card_unknown_explore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" android:id="@+id/identify_card" android:layout_below="@+id/second"
+            android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <Button
+            android:text="@string/cardreader_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:id="@+id/start" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    <Button
+            android:text="@string/cardreader_only_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:id="@+id/ic" android:layout_below="@+id/start" android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"/>
+    <Button
+            android:text="@string/cardreader_only_mag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mag"
+            android:layout_alignBaseline="@+id/ic" android:layout_alignBottom="@+id/ic"
+            android:layout_alignStart="@+id/start"/>
+    <Button
+            android:text="@string/cardreader_only_rf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp" android:id="@+id/rf" android:layout_alignBaseline="@+id/mag"
+            android:layout_alignBottom="@+id/mag" android:layout_alignParentEnd="true"/>
+    <TextView
+            android:text="@string/cardreader_timeout"
+            android:layout_height="30dp"
+            android:id="@+id/textView"
+            android:layout_alignTop="@+id/timeout" android:layout_alignEnd="@+id/ic"
+            android:layout_width="wrap_content"
+            android:gravity="center"/>
+    <EditText
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="@string/cardreader_timeout_unit"
+            android:id="@+id/timeout"
+            android:textSize="10sp"
+            android:layout_marginTop="22dp"
+            android:layout_below="@+id/mag" android:layout_toEndOf="@+id/textView"
+            android:gravity="center"/>
+    <TextView
+            android:text="@string/cardreader_field_strength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_marginTop="14dp" android:layout_below="@+id/textView" android:layout_alignStart="@+id/ic"/>
+    <EditText
+            android:layout_width="175dp"
+            android:layout_height="30dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="@string/cardreader_field_strength_tips"
+            android:id="@+id/fi"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/textView3" android:layout_toEndOf="@+id/textView3"/>
+</RelativeLayout>

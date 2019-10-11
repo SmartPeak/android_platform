@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 数据库定义 --><!-- version字段定义之后，如果需要修改表结构获取增加删除表，需要修改version，SDK自动根据版本号的更换重新初始化数据表 -->
+<Database name="Cashier.db" defaultTable="transaction_data" version="1">
+
+
+    <!-- 交易数据保存 -->
+    <!-- primaryKey需要定义在第一个field里面 -->
+
+    <table name="transaction_data" primaryKey="trace">
+
+
+
+        <field name="id" /> <!-- 主键,只能自增长的integer -->
+
+        <field name="trace" /> <!-- 流水号 -->
+
+        <field name="referenceNo" /> <!-- 参考号 ，可能多条，不能 -->
+
+        <field name="merchant_name" /> <!-- 商户名称 -->
+
+        <field name="merchant_no" /> <!-- 商户号 -->
+
+        <field name="terminal_no" /> <!-- 终端号 -->
+
+        <field name="func" /> <!-- 交易类型  消费，撤销，退货 -->
+
+        <field name="card_number" /> <!-- 卡号 -->
+
+        <field name="operatorNo" /> <!-- 操作员号 -->
+
+        <field name="exp_date" /> <!-- 有效期 -->
+
+        <field name="batch_no" /> <!-- 批次号 -->
+
+        <field name="auth_no" /> <!-- 授权号 -->
+
+        <field name="date_time" /> <!-- 交易时间 -->
+
+        <field name="amount" /> <!-- 交易金额 -->
+
+        <field name="ticket_no" /> <!-- 票据号 -->
+
+        <field name="status" /> <!-- 此笔交易状态，正常，已撤销，已退货 -->
+    </table>
+
+
+
+
+</Database>

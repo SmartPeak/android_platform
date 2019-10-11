@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <!--trace-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:text="trace" />
+
+                <EditText
+                    android:id="@+id/trace"
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:hint="trace" />
+            </LinearLayout>
+
+            <!--referenceNo-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:text="referenceNo" />
+
+                <EditText
+                    android:id="@+id/referenceNo"
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:hint="referenceNo" />
+            </LinearLayout>
+            <!--merchant_name-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:text="merchant_name" />
+
+                <EditText
+                    android:id="@+id/merchant_name"
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:hint="merchant_name" />
+            </LinearLayout>
+            <!--merchant_no-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:text="merchant_no" />
+
+                <EditText
+                    android:id="@+id/merchant_no"
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:hint="merchant_no" />
+            </LinearLayout>
+            <!--terminal_no-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:text="terminal_no" />
+
+                <EditText
+                    android:id="@+id/terminal_no"
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:hint="terminal_no" />
+            </LinearLayout>
+            <!--func-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:text="func" />
+
+                <EditText
+                    android:id="@+id/func"
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:hint="func" />
+            </LinearLayout>
+            <!--card_number-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:text="card_number" />
+
+                <EditText
+                    android:id="@+id/card_number"
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:hint="card_number" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <!--operatorNo-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:text="operatorNo" />
+
+                <EditText
+                    android:id="@+id/operatorNo"
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:hint="operatorNo" />
+            </LinearLayout>
+            <!--exp_date-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:text="exp_date" />
+
+                <EditText
+                    android:id="@+id/exp_date"
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:hint="exp_date" />
+            </LinearLayout>
+            <!--batch_no-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:text="batch_no" />
+
+                <EditText
+                    android:id="@+id/batch_no"
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:hint="batch_no" />
+            </LinearLayout>
+            <!--auth_no-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:text="auth_no" />
+
+                <EditText
+                    android:id="@+id/auth_no"
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:hint="auth_no" />
+            </LinearLayout>
+            <!--date_time-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:text="date_time" />
+
+                <EditText
+                    android:id="@+id/date_time"
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:hint="date_time" />
+            </LinearLayout>
+            <!--amount-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:text="amount" />
+
+                <EditText
+                    android:id="@+id/amount"
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:hint="amount" />
+            </LinearLayout>
+            <!--ticket_no-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:text="ticket_no" />
+
+                <EditText
+                    android:id="@+id/ticket_no"
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:hint="ticket_no" />
+            </LinearLayout>
+            <!--status-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:text="status" />
+
+                <EditText
+                    android:id="@+id/status"
+                    android:layout_width="@dimen/editText_w"
+                    android:layout_height="wrap_content"
+                    android:hint="status" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="add" />
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="delete" />
+
+            <Button
+                android:id="@+id/btn_modify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="modify" />
+
+            <Button
+                android:id="@+id/btn_query"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="query" />
+
+            <Button
+                android:id="@+id/btn_databaseclear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="clear" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</HorizontalScrollView>

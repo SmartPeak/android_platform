@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:divider="@drawable/divider_line_shape"
+    android:orientation="vertical"
+    android:showDividers="middle|end" >
+
+    <!-- 1,2,3,退格 { -->
+
+    <View
+        android:id="@+id/topline"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_color"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@drawable/divider_line_shape"
+        android:orientation="horizontal"
+        android:showDividers="middle" >
+
+        <TextView
+            android:id="@+id/num1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pininput"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@drawable/keyboard_text_color_selector"
+            android:textSize="@dimen/font_size_xlarge" />
+
+        <!-- android:background="@drawable/keyboard_btn_selector" -->
+
+        <TextView
+            android:id="@+id/num2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pininput"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@drawable/keyboard_text_color_selector"
+            android:textSize="@dimen/font_size_xlarge" />
+
+        <TextView
+            android:id="@+id/num3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pininput"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@drawable/keyboard_text_color_selector"
+            android:textSize="@dimen/font_size_xlarge" />
+
+        <LinearLayout
+            android:id="@+id/num_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pininput"
+            android:gravity="center"
+            android:textSize="@dimen/font_size_xlarge" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/del_btn" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 1,2,3,退格} -->
+    <!-- 4,5,6,0{ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@drawable/divider_line_shape"
+        android:orientation="horizontal"
+        android:showDividers="middle" >
+
+        <TextView
+            android:id="@+id/num4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pininput"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@drawable/keyboard_text_color_selector"
+            android:textSize="@dimen/font_size_xlarge" />
+
+        <TextView
+            android:id="@+id/num5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pininput"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@drawable/keyboard_text_color_selector"
+            android:textSize="@dimen/font_size_xlarge" />
+
+        <TextView
+            android:id="@+id/num6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pininput"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="@drawable/keyboard_text_color_selector"
+            android:textSize="@dimen/font_size_xlarge" />
+
+        <TextView
+            android:id="@+id/num0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pininput"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@drawable/keyboard_text_color_selector"
+            android:textSize="@dimen/font_size_xlarge" />
+    </LinearLayout>
+    <!-- 4,5,6,0} -->
+    <!-- 7,8,9,00{ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@drawable/divider_line_shape"
+        android:orientation="horizontal"
+        android:showDividers="middle" >
+
+        <TextView
+            android:id="@+id/num7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pininput"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="@drawable/keyboard_text_color_selector"
+            android:textSize="@dimen/font_size_xlarge" />
+
+        <TextView
+            android:id="@+id/num8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pininput"
+            android:gravity="center"
+            android:text="8"
+            android:textColor="@drawable/keyboard_text_color_selector"
+            android:textSize="@dimen/font_size_xlarge" />
+
+        <TextView
+            android:id="@+id/num9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pininput"
+            android:gravity="center"
+            android:text="9"
+            android:textColor="@drawable/keyboard_text_color_selector"
+            android:textSize="@dimen/font_size_xlarge" />
+
+
+
+        <LinearLayout
+            android:id="@+id/num_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pininput"
+            android:gravity="center"
+            android:textSize="@dimen/font_size_xlarge" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_car_type_default" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 7,8,9,00 } -->
+
+</LinearLayout>
