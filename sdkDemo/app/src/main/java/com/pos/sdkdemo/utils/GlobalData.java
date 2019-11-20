@@ -118,7 +118,7 @@ public class GlobalData {
      * @return
      */
     public boolean getGuiderShows() {
-        return mPrefs.getBoolean(GUIDER_SHOWS, true);
+        return mPrefs.getBoolean(GUIDER_SHOWS, false);
     }
     
     /**
