@@ -30,7 +30,7 @@ public class ScanTestDemoActivity extends Activity {
         AppUtil.setProp(ScanType.scansupport, "true");
         try {
 //            ServiceManager.getInstence().getScan().setContinueScanTimeout(1000);
-            ServiceManager.getInstence().getScan().setIfneedInvert(false);
+            ServiceManager.getInstence().getScan().setIfneedInvert(true);
             ServiceManager.getInstence().getScan().startScan(getTimeOut(), new OnBarcodeCallBack() {
                 @Override
                 public void onScanResult(String s) {

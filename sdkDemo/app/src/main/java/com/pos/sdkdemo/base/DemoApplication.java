@@ -33,8 +33,8 @@ public class DemoApplication extends Application{
          * init the GlobalData cashe
          */
         GlobalData.getInstance().init(this);
-        ServiceManager.getInstence().init(getApplicationContext());
-        LogUtil.openAllLog();
+//        ServiceManager.getInstence().init(getApplicationContext());
+//        LogUtil.openLog();
     }
 
 }

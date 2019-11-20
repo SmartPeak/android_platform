@@ -38,6 +38,11 @@
             android:required="false" />
 
         <activity android:name=".ActivityWelcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".sign.EleSignatureActivity" />
         <activity android:name=".led.LedTestActivity" />
@@ -73,11 +78,6 @@
         <activity android:name=".SpecialCardsModuleEntranceActivity" />
         <activity android:name=".SystemModuleEntranceActivity" />
         <activity android:name=".MenuActivity" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
     </activity>
         <activity android:name=".modifytime.ModifyTimeActivity" />
         <activity android:name=".apn.ApnActivity" />

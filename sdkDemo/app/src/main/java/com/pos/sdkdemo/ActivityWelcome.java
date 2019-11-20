@@ -115,8 +115,8 @@ public class ActivityWelcome extends Activity  implements ViewPager.OnPageChange
 				/**
 				 * init Device Server
 				 */
-				//ServiceManager.getInstence().init(getApplicationContext());
-				//LogUtil.openLog();
+				ServiceManager.getInstence().init(getApplicationContext());
+				LogUtil.openLog();
 			}
 		});
 
@@ -188,6 +188,7 @@ public class ActivityWelcome extends Activity  implements ViewPager.OnPageChange
 	private void startDemo()
 	{
 		finish();
+		GlobalData.getInstance().setGuiderShows(false);
 		if (GlobalData.getInstance().getGuiderShows())
 		{
 			overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
