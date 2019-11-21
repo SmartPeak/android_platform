@@ -115,8 +115,6 @@ public class ActivityWelcome extends Activity  implements ViewPager.OnPageChange
 				/**
 				 * init Device Server
 				 */
-				ServiceManager.getInstence().init(getApplicationContext());
-				LogUtil.openLog();
 			}
 		});
 
@@ -238,15 +236,17 @@ public class ActivityWelcome extends Activity  implements ViewPager.OnPageChange
 		"com.pos.permission.EMVCORE"
 		};
 		if (EasyPermissions.hasPermissions(this, perms)) {
-			Toast.makeText(this,"已获取存储权限",Toast.LENGTH_SHORT).show();
+			Toast.makeText(this,"Already Permission",Toast.LENGTH_SHORT).show();
+			ServiceManager.getInstence().init(getApplicationContext());
+			LogUtil.openLog();
 		} else {
 			// Do not have permissions, request them now
 			EasyPermissions.requestPermissions(
 					new PermissionRequest
 							.Builder(this,REQUEST_PERMISSION,perms)
-							.setRationale("尊敬的用户\n为了您能更好的使用本应用\n需要申请存储权限")
-							.setNegativeButtonText("拒绝")
-							.setPositiveButtonText("好的")
+							.setRationale("Dear users\n need to apply for storage Permissions for\n your better use of this application")
+							.setNegativeButtonText("NO")
+							.setPositiveButtonText("YES")
 							.build()
 			);
 		}
@@ -255,6 +255,11 @@ public class ActivityWelcome extends Activity  implements ViewPager.OnPageChange
 	@Override
 	public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
 		super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+		Log.e("Granted", "onRequestPermissionsResult:" + requestCode);
+		if(requestCode == 1){
+			ServiceManager.getInstence().init(getApplicationContext());
+			LogUtil.openLog();
+		}
 	}
 
 	@Override
